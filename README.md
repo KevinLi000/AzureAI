@@ -22,7 +22,24 @@ This repository demonstrates how to integrate various Azure AI services, includi
 
 ## Usage
 
-The `home.py` script provides a command-line interface to interact with Azure AI services:
+The `home.py` script can be used in two ways:
+
+### 1. Interactive Mode
+
+Simply run the script without any arguments to enter interactive mode:
+
+```bash
+python home.py
+```
+
+You'll be prompted to:
+1. Select a service (Text Analysis, Image Analysis, OpenAI Text Generation, or Document Analysis)
+2. Enter your input text or URL
+3. Optionally specify an output file path
+
+### 2. Command-line Interface
+
+Alternatively, you can provide arguments directly:
 
 ```bash
 # Analyze text sentiment
