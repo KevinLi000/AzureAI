@@ -45,7 +45,7 @@ class AzureAIService:
         
         Args:
             text (str): The text to analyze
-            
+    
         Returns:
             dict: The analysis results
         """
