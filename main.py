@@ -70,7 +70,7 @@ class AzureOpenAI:
         except Exception as e:
             print(f"连接测试: 失败 ✗ (错误: {str(e)})")
             return False
-      def chat_completion(self, messages, temperature=0.7, max_tokens=800):
+    def chat_completion(self, messages, temperature=0.7, max_tokens=800):
         """
         使用 Azure OpenAI 的 Chat Completion API
         
@@ -97,7 +97,7 @@ class AzureOpenAI:
                 "temperature": temperature,
                 "max_tokens": max_tokens
             }
-              print(f"发送请求到: {url}")
+            print(f"发送请求到: {url}")
             print(f"请求数据: {json.dumps(data, ensure_ascii=False)}")
             print(f"使用的API版本: {self.api_version}")
             print(f"使用的部署名称: {self.deployment}")
@@ -210,7 +210,8 @@ class AzureOpenAI:
         
         except Exception as e:
             print(f"获取嵌入向量时发生错误: {str(e)}")
-            return {"error": str(e)}      def verify_deployment(self):
+            return {"error": str(e)}      
+    def verify_deployment(self):
         """
         验证部署名称是否有效
         
