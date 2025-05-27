@@ -1,4 +1,5 @@
 
+import os
 def create_dotenv_file():
     """创建.env文件模板（如果不存在）"""
     env_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '.env')
